@@ -20,6 +20,7 @@
 		9562CCCD27BFCFB000ACB68D /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9562CCC227BFCFB000ACB68D /* Response.swift */; };
 		9562CCCE27BFCFB000ACB68D /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9562CCC327BFCFB000ACB68D /* Request.swift */; };
 		9562CCCF27BFCFB000ACB68D /* NetworkLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9562CCC427BFCFB000ACB68D /* NetworkLoader.swift */; };
+		9562CCD127BFDD7100ACB68D /* CivilizationListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9562CCD027BFDD7100ACB68D /* CivilizationListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		9562CCC227BFCFB000ACB68D /* Response.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
 		9562CCC327BFCFB000ACB68D /* Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
 		9562CCC427BFCFB000ACB68D /* NetworkLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkLoader.swift; sourceTree = "<group>"; };
+		9562CCD027BFDD7100ACB68D /* CivilizationListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CivilizationListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +118,7 @@
 			isa = PBXGroup;
 			children = (
 				9562CCB827BFCFB000ACB68D /* ContentView.swift */,
+				9562CCD027BFDD7100ACB68D /* CivilizationListView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -233,6 +236,7 @@
 				9562CCCA27BFCFB000ACB68D /* CivilizationRequest.swift in Sources */,
 				9562CCCB27BFCFB000ACB68D /* SinkResult.swift in Sources */,
 				9562CCCD27BFCFB000ACB68D /* Response.swift in Sources */,
+				9562CCD127BFDD7100ACB68D /* CivilizationListView.swift in Sources */,
 				9562CCCC27BFCFB000ACB68D /* HTTPURLResponse+Extension.swift in Sources */,
 				9562CCC527BFCFB000ACB68D /* AgeOfEmpiresViewModel.swift in Sources */,
 				9562CCCE27BFCFB000ACB68D /* Request.swift in Sources */,
