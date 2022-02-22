@@ -8,14 +8,15 @@
 import SwiftUI
 
 struct ContentView: View {
-    @ObservedObject var viewModel: CivizilationsViewModel = CivizilationsViewModel(urlString: "https://age-of-empires-2-api.herokuapp.com/api/v1/civilizations")
+    @StateObject var viewModel: CivizilationsViewModel = CivizilationsViewModel(urlString: "https://age-of-empires-2-api.herokuapp.com/api/v1/civilizations")
     
     var body: some View {
-        CivilizationListView(list: viewModel.list ?? [])
-        .onAppear {
-                viewModel.getCivizilations()
-            }
-       
+        switch viewModel.datasource {
+        case .awaiting: Color.clear.onAppear(perform: viewModel.getCivizilations)
+        case .loading: ProgressView()
+        case .success(let list): CivilizationListView(list: list)
+        case .failure(let error): Text(error.localizedDescription)
+        }
     }
     
 }

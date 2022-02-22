@@ -9,29 +9,18 @@ import Foundation
 import Combine
 import SwiftUI
 
-protocol DataSource {
-    associatedtype Model = Decodable
-    
-    var list: [Model]? { get }
-    var error: Error? { get }
+enum Datasource<T: Decodable> {
+    case awaiting
+    case loading
+    case success(_ list: [T])
+    case failure(Error)
 }
 
-//TODO: - Think that how can I do it
-/*
-protocol ObservableDataSource {
-    associatedtype Model = Decodable
-    var objectDidChange: PassthroughSubject = PassthroughSubject<[Model], Error> { get set }
-}
- */
-
-
-final class CivizilationsViewModel: ObservableObject, DataSource {
+final class CivizilationsViewModel: ObservableObject {
     
     @ObservedObject private var loader: NetworkLoader
     @Published private var response: Response<CivizilationResponse>!
-    //@Published var objectDidChange: PassthroughSubject = PassthroughSubject<[Civizilation], Error>()
-    @Published var list: [Civizilation]?
-    @Published var error: Error?
+    @Published var datasource: Datasource<Civizilation> = .awaiting
     
     init(urlString: String) {
         let request = CivizilationRequest(urlString: urlString)
@@ -39,16 +28,15 @@ final class CivizilationsViewModel: ObservableObject, DataSource {
     }
     
     func getCivizilations() {
-        self.response = loader.request(forType: CivizilationResponse.self)
+        datasource = .loading
+        response = loader.request(forType: CivizilationResponse.self)
         response.create { [weak self] response in
             guard let self = self else { return }
             switch response {
             case .success(let response):
-                self.list = response.civilizations
-                //self.objectDidChange.send(response.civilizations)
+                self.datasource = .success(response.civilizations)
             case .failure(let error):
-                self.error = error
-                //self.objectDidChange.send(completion: .failure(error))
+                self.datasource = .failure(error)
             case .finished:
                 break
             }
