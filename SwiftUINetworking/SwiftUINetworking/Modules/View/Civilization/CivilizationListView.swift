@@ -9,7 +9,7 @@ import SwiftUI
 
 struct CivilizationListView: View {
     
-    private var list: [Civizilation]
+    private var list: [Civilization]
     
     var body: some View {
         List(list) { civilization in
@@ -17,7 +17,7 @@ struct CivilizationListView: View {
         }
     }
     
-    init(list: [Civizilation]) {
+    init(list: [Civilization]) {
         self.list = list
     }
     

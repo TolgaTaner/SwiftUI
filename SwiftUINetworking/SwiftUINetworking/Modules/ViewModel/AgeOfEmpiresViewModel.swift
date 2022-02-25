@@ -1,6 +1,6 @@
 //
-//  AgeOfEmpiresViewModel.swift
-//  AgeOfEmpiresList
+//  CivilizationsViewModel.swift
+//  Civilizations
 //
 //  Created by Tolga Taner on 18.02.2022.
 //
@@ -16,11 +16,11 @@ enum Datasource<T: Decodable> {
     case failure(Error)
 }
 
-final class CivizilationsViewModel: ObservableObject {
+final class CivilizationsViewModel: ObservableObject {
     
     @ObservedObject private var loader: NetworkLoader
-    @Published private var response: Response<CivizilationResponse>!
-    @Published var datasource: Datasource<Civizilation> = .awaiting
+    @Published private var response: Response<CivilizationResponse>!
+    @Published var datasource: Datasource<Civilization> = .awaiting
     
     init(urlString: String) {
         let request = CivizilationRequest(urlString: urlString)
@@ -29,7 +29,7 @@ final class CivizilationsViewModel: ObservableObject {
     
     func getCivizilations() {
         datasource = .loading
-        response = loader.request(forType: CivizilationResponse.self)
+        response = loader.request(forType: CivilizationResponse.self)
         response.create { [weak self] response in
             guard let self = self else { return }
             switch response {

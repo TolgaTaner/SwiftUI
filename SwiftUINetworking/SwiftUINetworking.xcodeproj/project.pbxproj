@@ -7,10 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9547FFAB27C8D31300978E19 /* ContentNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9547FFAA27C8D31300978E19 /* ContentNavigationView.swift */; };
 		9562CC8B27BFCE4800ACB68D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9562CC8A27BFCE4800ACB68D /* Assets.xcassets */; };
 		9562CC8E27BFCE4800ACB68D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9562CC8D27BFCE4800ACB68D /* Preview Assets.xcassets */; };
 		9562CCC527BFCFB000ACB68D /* AgeOfEmpiresViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9562CCB427BFCFB000ACB68D /* AgeOfEmpiresViewModel.swift */; };
-		9562CCC627BFCFB000ACB68D /* Civizilation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9562CCB627BFCFB000ACB68D /* Civizilation.swift */; };
+		9562CCC627BFCFB000ACB68D /* Civilization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9562CCB627BFCFB000ACB68D /* Civilization.swift */; };
 		9562CCC727BFCFB000ACB68D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9562CCB827BFCFB000ACB68D /* ContentView.swift */; };
 		9562CCC827BFCFB000ACB68D /* SwiftUINetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9562CCB927BFCFB000ACB68D /* SwiftUINetworking.swift */; };
 		9562CCC927BFCFB000ACB68D /* CivizilationResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9562CCBC27BFCFB000ACB68D /* CivizilationResponse.swift */; };
@@ -21,14 +22,16 @@
 		9562CCCE27BFCFB000ACB68D /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9562CCC327BFCFB000ACB68D /* Request.swift */; };
 		9562CCCF27BFCFB000ACB68D /* NetworkLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9562CCC427BFCFB000ACB68D /* NetworkLoader.swift */; };
 		9562CCD127BFDD7100ACB68D /* CivilizationListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9562CCD027BFDD7100ACB68D /* CivilizationListView.swift */; };
+		9590A7EA27C793BB00301B05 /* CivilizationDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9590A7E927C793BB00301B05 /* CivilizationDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9547FFAA27C8D31300978E19 /* ContentNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentNavigationView.swift; sourceTree = "<group>"; };
 		9562CC8327BFCE4500ACB68D /* SwiftUINetworking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUINetworking.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9562CC8A27BFCE4800ACB68D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9562CC8D27BFCE4800ACB68D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		9562CCB427BFCFB000ACB68D /* AgeOfEmpiresViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AgeOfEmpiresViewModel.swift; sourceTree = "<group>"; };
-		9562CCB627BFCFB000ACB68D /* Civizilation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Civizilation.swift; sourceTree = "<group>"; };
+		9562CCB627BFCFB000ACB68D /* Civilization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Civilization.swift; sourceTree = "<group>"; };
 		9562CCB827BFCFB000ACB68D /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		9562CCB927BFCFB000ACB68D /* SwiftUINetworking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftUINetworking.swift; sourceTree = "<group>"; };
 		9562CCBC27BFCFB000ACB68D /* CivizilationResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CivizilationResponse.swift; sourceTree = "<group>"; };
@@ -39,6 +42,7 @@
 		9562CCC327BFCFB000ACB68D /* Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
 		9562CCC427BFCFB000ACB68D /* NetworkLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkLoader.swift; sourceTree = "<group>"; };
 		9562CCD027BFDD7100ACB68D /* CivilizationListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CivilizationListView.swift; sourceTree = "<group>"; };
+		9590A7E927C793BB00301B05 /* CivilizationDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CivilizationDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,7 +97,6 @@
 				9562CCB327BFCFB000ACB68D /* ViewModel */,
 				9562CCB527BFCFB000ACB68D /* Model */,
 				9562CCB727BFCFB000ACB68D /* View */,
-				9562CCB927BFCFB000ACB68D /* SwiftUINetworking.swift */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -109,7 +112,7 @@
 		9562CCB527BFCFB000ACB68D /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				9562CCB627BFCFB000ACB68D /* Civizilation.swift */,
+				9562CCB627BFCFB000ACB68D /* Civilization.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -117,8 +120,10 @@
 		9562CCB727BFCFB000ACB68D /* View */ = {
 			isa = PBXGroup;
 			children = (
-				9562CCB827BFCFB000ACB68D /* ContentView.swift */,
-				9562CCD027BFDD7100ACB68D /* CivilizationListView.swift */,
+				9562CCB927BFCFB000ACB68D /* SwiftUINetworking.swift */,
+				9590A7E627C7915A00301B05 /* Civilization */,
+				9590A7E827C793AE00301B05 /* Detail */,
+				9547FFAA27C8D31300978E19 /* ContentNavigationView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -159,6 +164,23 @@
 				9562CCC127BFCFB000ACB68D /* HTTPURLResponse+Extension.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		9590A7E627C7915A00301B05 /* Civilization */ = {
+			isa = PBXGroup;
+			children = (
+				9562CCB827BFCFB000ACB68D /* ContentView.swift */,
+				9562CCD027BFDD7100ACB68D /* CivilizationListView.swift */,
+			);
+			path = Civilization;
+			sourceTree = "<group>";
+		};
+		9590A7E827C793AE00301B05 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				9590A7E927C793BB00301B05 /* CivilizationDetailView.swift */,
+			);
+			path = Detail;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,10 +254,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				9562CCC827BFCFB000ACB68D /* SwiftUINetworking.swift in Sources */,
-				9562CCC627BFCFB000ACB68D /* Civizilation.swift in Sources */,
+				9562CCC627BFCFB000ACB68D /* Civilization.swift in Sources */,
 				9562CCCA27BFCFB000ACB68D /* CivilizationRequest.swift in Sources */,
+				9590A7EA27C793BB00301B05 /* CivilizationDetailView.swift in Sources */,
 				9562CCCB27BFCFB000ACB68D /* SinkResult.swift in Sources */,
 				9562CCCD27BFCFB000ACB68D /* Response.swift in Sources */,
+				9547FFAB27C8D31300978E19 /* ContentNavigationView.swift in Sources */,
 				9562CCD127BFDD7100ACB68D /* CivilizationListView.swift in Sources */,
 				9562CCCC27BFCFB000ACB68D /* HTTPURLResponse+Extension.swift in Sources */,
 				9562CCC527BFCFB000ACB68D /* AgeOfEmpiresViewModel.swift in Sources */,
