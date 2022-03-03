@@ -14,7 +14,7 @@
 		9562CCC627BFCFB000ACB68D /* Civilization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9562CCB627BFCFB000ACB68D /* Civilization.swift */; };
 		9562CCC727BFCFB000ACB68D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9562CCB827BFCFB000ACB68D /* ContentView.swift */; };
 		9562CCC827BFCFB000ACB68D /* SwiftUINetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9562CCB927BFCFB000ACB68D /* SwiftUINetworking.swift */; };
-		9562CCC927BFCFB000ACB68D /* CivizilationResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9562CCBC27BFCFB000ACB68D /* CivizilationResponse.swift */; };
+		9562CCC927BFCFB000ACB68D /* CivilizationResponse in Sources */ = {isa = PBXBuildFile; fileRef = 9562CCBC27BFCFB000ACB68D /* CivilizationResponse */; };
 		9562CCCA27BFCFB000ACB68D /* CivilizationRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9562CCBD27BFCFB000ACB68D /* CivilizationRequest.swift */; };
 		9562CCCB27BFCFB000ACB68D /* SinkResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9562CCBF27BFCFB000ACB68D /* SinkResult.swift */; };
 		9562CCCC27BFCFB000ACB68D /* HTTPURLResponse+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9562CCC127BFCFB000ACB68D /* HTTPURLResponse+Extension.swift */; };
@@ -22,6 +22,7 @@
 		9562CCCE27BFCFB000ACB68D /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9562CCC327BFCFB000ACB68D /* Request.swift */; };
 		9562CCCF27BFCFB000ACB68D /* NetworkLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9562CCC427BFCFB000ACB68D /* NetworkLoader.swift */; };
 		9562CCD127BFDD7100ACB68D /* CivilizationListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9562CCD027BFDD7100ACB68D /* CivilizationListView.swift */; };
+		958EACCF27CFA29C002E789B /* Publisher+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 958EACCE27CFA29C002E789B /* Publisher+Extension.swift */; };
 		9590A7EA27C793BB00301B05 /* CivilizationDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9590A7E927C793BB00301B05 /* CivilizationDetailView.swift */; };
 /* End PBXBuildFile section */
 
@@ -34,7 +35,7 @@
 		9562CCB627BFCFB000ACB68D /* Civilization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Civilization.swift; sourceTree = "<group>"; };
 		9562CCB827BFCFB000ACB68D /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		9562CCB927BFCFB000ACB68D /* SwiftUINetworking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftUINetworking.swift; sourceTree = "<group>"; };
-		9562CCBC27BFCFB000ACB68D /* CivizilationResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CivizilationResponse.swift; sourceTree = "<group>"; };
+		9562CCBC27BFCFB000ACB68D /* CivilizationResponse */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CivilizationResponse; sourceTree = "<group>"; };
 		9562CCBD27BFCFB000ACB68D /* CivilizationRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CivilizationRequest.swift; sourceTree = "<group>"; };
 		9562CCBF27BFCFB000ACB68D /* SinkResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SinkResult.swift; sourceTree = "<group>"; };
 		9562CCC127BFCFB000ACB68D /* HTTPURLResponse+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HTTPURLResponse+Extension.swift"; sourceTree = "<group>"; };
@@ -42,6 +43,7 @@
 		9562CCC327BFCFB000ACB68D /* Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
 		9562CCC427BFCFB000ACB68D /* NetworkLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkLoader.swift; sourceTree = "<group>"; };
 		9562CCD027BFDD7100ACB68D /* CivilizationListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CivilizationListView.swift; sourceTree = "<group>"; };
+		958EACCE27CFA29C002E789B /* Publisher+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Publisher+Extension.swift"; sourceTree = "<group>"; };
 		9590A7E927C793BB00301B05 /* CivilizationDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CivilizationDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -131,19 +133,19 @@
 		9562CCBA27BFCFB000ACB68D /* Networking */ = {
 			isa = PBXGroup;
 			children = (
-				9562CCBB27BFCFB000ACB68D /* Civizilation */,
+				9562CCBB27BFCFB000ACB68D /* Civilization */,
 				9562CCBE27BFCFB000ACB68D /* Base */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
 		};
-		9562CCBB27BFCFB000ACB68D /* Civizilation */ = {
+		9562CCBB27BFCFB000ACB68D /* Civilization */ = {
 			isa = PBXGroup;
 			children = (
-				9562CCBC27BFCFB000ACB68D /* CivizilationResponse.swift */,
+				9562CCBC27BFCFB000ACB68D /* CivilizationResponse */,
 				9562CCBD27BFCFB000ACB68D /* CivilizationRequest.swift */,
 			);
-			path = Civizilation;
+			path = Civilization;
 			sourceTree = "<group>";
 		};
 		9562CCBE27BFCFB000ACB68D /* Base */ = {
@@ -162,6 +164,7 @@
 			isa = PBXGroup;
 			children = (
 				9562CCC127BFCFB000ACB68D /* HTTPURLResponse+Extension.swift */,
+				958EACCE27CFA29C002E789B /* Publisher+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -262,9 +265,10 @@
 				9547FFAB27C8D31300978E19 /* ContentNavigationView.swift in Sources */,
 				9562CCD127BFDD7100ACB68D /* CivilizationListView.swift in Sources */,
 				9562CCCC27BFCFB000ACB68D /* HTTPURLResponse+Extension.swift in Sources */,
+				958EACCF27CFA29C002E789B /* Publisher+Extension.swift in Sources */,
 				9562CCC527BFCFB000ACB68D /* AgeOfEmpiresViewModel.swift in Sources */,
 				9562CCCE27BFCFB000ACB68D /* Request.swift in Sources */,
-				9562CCC927BFCFB000ACB68D /* CivizilationResponse.swift in Sources */,
+				9562CCC927BFCFB000ACB68D /* CivilizationResponse in Sources */,
 				9562CCCF27BFCFB000ACB68D /* NetworkLoader.swift in Sources */,
 				9562CCC727BFCFB000ACB68D /* ContentView.swift in Sources */,
 			);

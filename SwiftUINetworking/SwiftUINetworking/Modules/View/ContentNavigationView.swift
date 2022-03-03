@@ -9,22 +9,35 @@ import SwiftUI
 
 struct ContentNavigationView<Content: View>: View {
     
-    private let title: String
+    enum Style {
+        case title(String)
+        case titleSubtitle(String, String)
+        case titleImage(String, UIImage)
+    }
+    
+    private let style: Style
     private let content: Content
     
-    init(title: String,
+    init(style: Style,
          @ViewBuilder content: @escaping () -> Content) {
-        self.title = title
+        self.style = style
         self.content = content()
     }
     
     var body: some View {
         NavigationView {
-            content.navigationBarTitleDisplayMode(.automatic)
+            content.navigationBarTitleDisplayMode(.inline)
                 .toolbar {
                     ToolbarItem(placement: .principal) {
                         HStack {
-                            Text(title).bold()
+                            switch style {
+                            case .title(let string):
+                                Text(string).bold()
+                            case .titleSubtitle(let string, let string):
+                                Text(string).bold()
+                            case .titleImage(let string, let image):
+                                Text(string).bold()
+                            }
                         }
                     }
                 }

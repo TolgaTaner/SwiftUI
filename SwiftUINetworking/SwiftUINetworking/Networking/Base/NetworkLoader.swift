@@ -43,18 +43,21 @@ final class NetworkLoader: ObservableObject {
             return Response(publisher: AnyPublisher(Fail<T, Error>(error: RequestError.urlNotCreated)))
         }
         return Response(publisher: session.dataTaskPublisher(for: urlRequest)
-            .tryMap { element -> Data in
-                guard let urlResponse = element.response as? HTTPURLResponse
-                else {
-                    throw URLError(.badServerResponse)
-                }
-                guard let error = urlResponse.asError() else {
-                    return element.data
-                }
-                throw error
+                            .tryMap { element -> Data in
+            guard let urlResponse = element.response as? HTTPURLResponse
+            else {
+                throw URLError(.badServerResponse)
             }
-            .decode(type: type, decoder: decoder)
-            .receive(on: queue)
-            .eraseToAnyPublisher())
+            guard let error = urlResponse.asError() else {
+                return element.data
+            }
+            throw error
+        }
+        .retry(3, delay: 1, scheduler: queue)
+        .decode(type: type, decoder: decoder)
+        .receive(on: queue)
+        .eraseToAnyPublisher())
     }
+    
+    
 }
