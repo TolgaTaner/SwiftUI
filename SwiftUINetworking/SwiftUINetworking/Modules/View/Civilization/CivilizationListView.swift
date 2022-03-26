@@ -13,8 +13,8 @@ struct CivilizationListView: View {
     
     var body: some View {
         List(list) { civilization in
-            Text("\(civilization.name)")
-        }
+            CivilizationRowView(civilization: civilization)
+        }.listStyle(.automatic )
     }
     
     init(list: [Civilization]) {

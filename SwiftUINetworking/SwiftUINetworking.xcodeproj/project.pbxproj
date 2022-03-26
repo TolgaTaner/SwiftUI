@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		952895D227D3BA3900626C8B /* SearchedObservableObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 952895D127D3BA3900626C8B /* SearchedObservableObject.swift */; };
+		953528DD27DA19C1004B17B2 /* CivilizationRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953528DC27DA19C1004B17B2 /* CivilizationRowView.swift */; };
 		9547FFAB27C8D31300978E19 /* ContentNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9547FFAA27C8D31300978E19 /* ContentNavigationView.swift */; };
 		9562CC8B27BFCE4800ACB68D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9562CC8A27BFCE4800ACB68D /* Assets.xcassets */; };
 		9562CC8E27BFCE4800ACB68D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9562CC8D27BFCE4800ACB68D /* Preview Assets.xcassets */; };
@@ -24,9 +26,12 @@
 		9562CCD127BFDD7100ACB68D /* CivilizationListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9562CCD027BFDD7100ACB68D /* CivilizationListView.swift */; };
 		958EACCF27CFA29C002E789B /* Publisher+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 958EACCE27CFA29C002E789B /* Publisher+Extension.swift */; };
 		9590A7EA27C793BB00301B05 /* CivilizationDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9590A7E927C793BB00301B05 /* CivilizationDetailView.swift */; };
+		95B888B527EA3F1000AEEAEF /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 95B888B427EA3F1000AEEAEF /* Kingfisher */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		952895D127D3BA3900626C8B /* SearchedObservableObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchedObservableObject.swift; sourceTree = "<group>"; };
+		953528DC27DA19C1004B17B2 /* CivilizationRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CivilizationRowView.swift; sourceTree = "<group>"; };
 		9547FFAA27C8D31300978E19 /* ContentNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentNavigationView.swift; sourceTree = "<group>"; };
 		9562CC8327BFCE4500ACB68D /* SwiftUINetworking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUINetworking.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9562CC8A27BFCE4800ACB68D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -52,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				95B888B527EA3F1000AEEAEF /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -115,6 +121,7 @@
 			isa = PBXGroup;
 			children = (
 				9562CCB627BFCFB000ACB68D /* Civilization.swift */,
+				952895D127D3BA3900626C8B /* SearchedObservableObject.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -174,6 +181,7 @@
 			children = (
 				9562CCB827BFCFB000ACB68D /* ContentView.swift */,
 				9562CCD027BFDD7100ACB68D /* CivilizationListView.swift */,
+				953528DC27DA19C1004B17B2 /* CivilizationRowView.swift */,
 			);
 			path = Civilization;
 			sourceTree = "<group>";
@@ -202,6 +210,9 @@
 			dependencies = (
 			);
 			name = SwiftUINetworking;
+			packageProductDependencies = (
+				95B888B427EA3F1000AEEAEF /* Kingfisher */,
+			);
 			productName = SwiftUINetworking;
 			productReference = 9562CC8327BFCE4500ACB68D /* SwiftUINetworking.app */;
 			productType = "com.apple.product-type.application";
@@ -230,6 +241,9 @@
 				Base,
 			);
 			mainGroup = 9562CC7A27BFCE4500ACB68D;
+			packageReferences = (
+				95B888B327EA3F1000AEEAEF /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = 9562CC8427BFCE4500ACB68D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -260,6 +274,8 @@
 				9562CCC627BFCFB000ACB68D /* Civilization.swift in Sources */,
 				9562CCCA27BFCFB000ACB68D /* CivilizationRequest.swift in Sources */,
 				9590A7EA27C793BB00301B05 /* CivilizationDetailView.swift in Sources */,
+				952895D227D3BA3900626C8B /* SearchedObservableObject.swift in Sources */,
+				953528DD27DA19C1004B17B2 /* CivilizationRowView.swift in Sources */,
 				9562CCCB27BFCFB000ACB68D /* SinkResult.swift in Sources */,
 				9562CCCD27BFCFB000ACB68D /* Response.swift in Sources */,
 				9547FFAB27C8D31300978E19 /* ContentNavigationView.swift in Sources */,
@@ -409,7 +425,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -439,7 +455,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -475,6 +491,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		95B888B327EA3F1000AEEAEF /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		95B888B427EA3F1000AEEAEF /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 95B888B327EA3F1000AEEAEF /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 9562CC7B27BFCE4500ACB68D /* Project object */;
 }

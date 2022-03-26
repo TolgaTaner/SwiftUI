@@ -14,6 +14,13 @@ enum Datasource<T: Decodable> {
     case loading
     case success(_ list: [T])
     case failure(Error)
+    
+    var list: [T]? {
+        switch self {
+        case .success(let list): return list
+        default: return nil
+        }
+    }
 }
 
 final class CivilizationsViewModel: ObservableObject {

@@ -17,10 +17,14 @@ struct ContentNavigationView<Content: View>: View {
     
     private let style: Style
     private let content: Content
+    private var searchedObject: SearchedObservableObject<Civilization>?
+    @State private var searchTerm: String = String()
     
     init(style: Style,
+         searchedObject: SearchedObservableObject<Civilization>? = nil,
          @ViewBuilder content: @escaping () -> Content) {
         self.style = style
+        self.searchedObject = searchedObject
         self.content = content()
     }
     
@@ -41,6 +45,17 @@ struct ContentNavigationView<Content: View>: View {
                         }
                     }
                 }
+        }
+        .searchable(text: $searchTerm, placement: .navigationBarDrawer(displayMode: .automatic)) {
+            ForEach(searchedObject?.result ?? searchedObject?.data ?? []) { civilization in
+                CivilizationRowView(civilization: civilization)
+            }
+        }.onChange(of: searchTerm) { searchTerm in
+            if searchTerm.isEmpty {
+                searchedObject?.result = searchedObject?.data ?? []
+                return
+            }
+            searchedObject?.result = searchedObject?.data.filter { $0.name.lowercased().contains(searchTerm.lowercased()) } ?? []
         }
     }
 }
