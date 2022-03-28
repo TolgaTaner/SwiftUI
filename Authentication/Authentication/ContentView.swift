@@ -32,6 +32,7 @@ struct RegisterView: View {
                         .cornerRadius(16)
                         .overlay(RoundedRectangle(cornerRadius: 10).stroke(Color.gray))
                         .padding([.horizontal], 24)
+                        .submitLabel(.continue)
                     
                     SecureField(Keys.password, text: $password)
                         .frame(height: 44)
@@ -40,6 +41,7 @@ struct RegisterView: View {
                         .cornerRadius(16)
                         .overlay(RoundedRectangle(cornerRadius: 10).stroke(Color.gray))
                         .padding([.horizontal], 24)
+                        .submitLabel(.done)
                 }
                 Spacer()
                 Spacer()
