@@ -15,27 +15,41 @@ struct RegisterView: View {
     private struct Keys {
         static let mailAddress = "Mail Address"
         static let password = "Password"
+        static let button = "Register"
     }
     
     var body: some View {
-        VStack(alignment: HorizontalAlignment.leading, spacing: 20) {
-            TextField(Keys.mailAddress, text: $mailAddress, onCommit: {
-                print(mailAddress)
-            })
-                .frame(height: 44)
-                .textFieldStyle(PlainTextFieldStyle())
-                .padding([.horizontal], 4)
-                .cornerRadius(16)
-                .overlay(RoundedRectangle(cornerRadius: 10).stroke(Color.gray))
-                .padding([.horizontal], 24)
-            
-            SecureField(Keys.password, text: $password)
-                .frame(height: 44)
-                .textFieldStyle(PlainTextFieldStyle())
-                .padding([.horizontal], 4)
-                .cornerRadius(16)
-                .overlay(RoundedRectangle(cornerRadius: 10).stroke(Color.gray))
-                .padding([.horizontal], 24)
+        GeometryReader { proxy in
+            VStack(alignment: .center, spacing: 20) {
+                Spacer()
+                VStack(alignment: .center, spacing: 20) {
+                    TextField(Keys.mailAddress, text: $mailAddress, onCommit: {
+                        print(mailAddress)
+                    })
+                        .frame(height: 44)
+                        .textFieldStyle(PlainTextFieldStyle())
+                        .padding([.horizontal], 4)
+                        .cornerRadius(16)
+                        .overlay(RoundedRectangle(cornerRadius: 10).stroke(Color.gray))
+                        .padding([.horizontal], 24)
+                    
+                    SecureField(Keys.password, text: $password)
+                        .frame(height: 44)
+                        .textFieldStyle(PlainTextFieldStyle())
+                        .padding([.horizontal], 4)
+                        .cornerRadius(16)
+                        .overlay(RoundedRectangle(cornerRadius: 10).stroke(Color.gray))
+                        .padding([.horizontal], 24)
+                }
+                Spacer()
+                Spacer()
+                Spacer()
+                Button(Keys.button) {
+                    
+                }.frame(width: UIScreen.main.bounds.width, height: 44)
+                .background(Color.red)
+                .foregroundColor(.white)
+            }
         }
     }
 }
