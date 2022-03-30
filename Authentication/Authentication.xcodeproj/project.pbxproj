@@ -11,6 +11,7 @@
 		95D0733327E615080000C244 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95D0733227E615080000C244 /* ContentView.swift */; };
 		95D0733527E6150B0000C244 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95D0733427E6150B0000C244 /* Assets.xcassets */; };
 		95D0733827E6150B0000C244 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95D0733727E6150B0000C244 /* Preview Assets.xcassets */; };
+		95E5D49027F4AA630079A8D7 /* RoundedBorderTextFieldStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E5D48F27F4AA630079A8D7 /* RoundedBorderTextFieldStyle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		95D0733227E615080000C244 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		95D0733427E6150B0000C244 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		95D0733727E6150B0000C244 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		95E5D48F27F4AA630079A8D7 /* RoundedBorderTextFieldStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedBorderTextFieldStyle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			children = (
 				95D0733027E615080000C244 /* AuthenticationApp.swift */,
 				95D0733227E615080000C244 /* ContentView.swift */,
+				95E5D48F27F4AA630079A8D7 /* RoundedBorderTextFieldStyle.swift */,
 				95D0733427E6150B0000C244 /* Assets.xcassets */,
 				95D0733627E6150B0000C244 /* Preview Content */,
 			);
@@ -139,6 +142,7 @@
 			files = (
 				95D0733327E615080000C244 /* ContentView.swift in Sources */,
 				95D0733127E615080000C244 /* AuthenticationApp.swift in Sources */,
+				95E5D49027F4AA630079A8D7 /* RoundedBorderTextFieldStyle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
