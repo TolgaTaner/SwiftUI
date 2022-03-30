@@ -17,7 +17,7 @@ struct RoundedBorderTextFieldStyle: ViewModifier {
      }
 }
 
-extension TextField {
+extension View {
     func roundedBorderTextFieldStyle() -> some View {
         modifier(RoundedBorderTextFieldStyle())
     }
