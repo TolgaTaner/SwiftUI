@@ -32,7 +32,7 @@ struct LoggingAdapter: RequestAdapter {
         }
     }
     
-    func onResponse(response: URLResponse?, data: Data?) {
+    func onResponse(response: URLResponse, data: Data?) {
         guard let http = response as? HTTPURLResponse else
         { return }
         log.message("Received HTTP \(http.statusCode) from \(http.url?.absoluteString ?? "<?>")", level: .info)
