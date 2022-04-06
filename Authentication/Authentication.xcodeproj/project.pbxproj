@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		952F696727FDC15000837BEF /* DismissingKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 952F696627FDC15000837BEF /* DismissingKeyboard.swift */; };
+		952F696927FDC5C700837BEF /* Background.swift in Sources */ = {isa = PBXBuildFile; fileRef = 952F696827FDC5C700837BEF /* Background.swift */; };
 		95D0733127E615080000C244 /* AuthenticationApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95D0733027E615080000C244 /* AuthenticationApp.swift */; };
 		95D0733327E615080000C244 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95D0733227E615080000C244 /* ContentView.swift */; };
 		95D0733527E6150B0000C244 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95D0733427E6150B0000C244 /* Assets.xcassets */; };
@@ -15,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		952F696627FDC15000837BEF /* DismissingKeyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DismissingKeyboard.swift; sourceTree = "<group>"; };
+		952F696827FDC5C700837BEF /* Background.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Background.swift; sourceTree = "<group>"; };
 		95D0732D27E615070000C244 /* Authentication.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Authentication.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		95D0733027E615080000C244 /* AuthenticationApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationApp.swift; sourceTree = "<group>"; };
 		95D0733227E615080000C244 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -55,6 +59,8 @@
 			children = (
 				95D0733027E615080000C244 /* AuthenticationApp.swift */,
 				95D0733227E615080000C244 /* ContentView.swift */,
+				952F696827FDC5C700837BEF /* Background.swift */,
+				952F696627FDC15000837BEF /* DismissingKeyboard.swift */,
 				95E5D48F27F4AA630079A8D7 /* RoundedBorderTextFieldStyle.swift */,
 				95D0733427E6150B0000C244 /* Assets.xcassets */,
 				95D0733627E6150B0000C244 /* Preview Content */,
@@ -142,7 +148,9 @@
 			files = (
 				95D0733327E615080000C244 /* ContentView.swift in Sources */,
 				95D0733127E615080000C244 /* AuthenticationApp.swift in Sources */,
+				952F696727FDC15000837BEF /* DismissingKeyboard.swift in Sources */,
 				95E5D49027F4AA630079A8D7 /* RoundedBorderTextFieldStyle.swift in Sources */,
+				952F696927FDC5C700837BEF /* Background.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

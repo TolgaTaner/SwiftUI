@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct RoundedBorderTextFieldStyle: ViewModifier {
+struct RoundedBorderTextField: ViewModifier {
     func body(content: Content) -> some View {
          content
             .padding([.horizontal], 4)
@@ -19,6 +19,6 @@ struct RoundedBorderTextFieldStyle: ViewModifier {
 
 extension View {
     func roundedBorderTextFieldStyle() -> some View {
-        modifier(RoundedBorderTextFieldStyle())
+        modifier(RoundedBorderTextField())
     }
 }

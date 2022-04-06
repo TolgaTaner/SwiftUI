@@ -19,37 +19,41 @@ struct RegisterView: View {
     }
     
     var body: some View {
-        VStack(alignment: .center, spacing: 20) {
-            Spacer()
+        BackgroundContentView(color: .white, isIgnoringSafeArea: true) {
             VStack(alignment: .center, spacing: 20) {
-                TextField(Keys.mailAddress, text: $mailAddress, onCommit: {
-                    print(mailAddress)
-                })
-                    .frame(height: 44)
-                    .textFieldStyle(PlainTextFieldStyle())
-                    .roundedBorderTextFieldStyle()
-                    .submitLabel(.continue)
-                
-                SecureField(Keys.password, text: $password)
-                    .frame(height: 44)
-                    .textFieldStyle(PlainTextFieldStyle())
-                    .roundedBorderTextFieldStyle()
-                    .submitLabel(.done)
+                Spacer()
+                VStack(alignment: .center, spacing: 20) {
+                    TextField(Keys.mailAddress, text: $mailAddress, onCommit: {
+                        print(mailAddress)
+                    })
+                        .frame(width: UIScreen.main.bounds.width - 20, height: 44, alignment: .center)
+                        .textFieldStyle(RoundedBorderTextFieldStyle())
+                        .submitLabel(.continue)
+                    
+                    
+                    
+                    SecureField(Keys.password, text: $password)
+                        .frame(width: UIScreen.main.bounds.width - 20, height: 44, alignment: .center)
+                        .textFieldStyle(RoundedBorderTextFieldStyle())
+                        .submitLabel(.done)
+                    
+                }
+                Spacer()
+                Spacer()
+                Spacer()
+                Button(Keys.button) {
+                    
+                }.frame(width: UIScreen.main.bounds.width, height: 44)
+                    .background(Color.red)
+                    .foregroundColor(.white)
             }
-            Spacer()
-            Spacer()
-            Spacer()
-            Button(Keys.button) {
-                
-            }.frame(width: UIScreen.main.bounds.width, height: 44)
-                .background(Color.red)
-                .foregroundColor(.white)
+        }.dismissKeyboard()
+                              
+                              }
+                              }
+                              
+                              struct RegisterView_Previews: PreviewProvider {
+            static var previews: some View {
+                RegisterView()
+            }
         }
-    }
-}
-
-struct RegisterView_Previews: PreviewProvider {
-    static var previews: some View {
-        RegisterView()
-    }
-}
